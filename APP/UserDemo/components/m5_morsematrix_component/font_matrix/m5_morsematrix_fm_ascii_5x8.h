@@ -1,0 +1,35 @@
+/*
+ * SPDX-FileCopyrightText: 2025 M5Stack Technology CO LTD
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+// Auto-generated from m5_morsematrix_fm_ascii.txt. DO NOT EDIT.
+#pragma once
+
+#include <cstddef>
+#include <cstdint>
+
+#ifndef M5_MORSEMATRIX_FONT_TYPES_DEFINED
+#define M5_MORSEMATRIX_FONT_TYPES_DEFINED
+typedef struct {
+	uint32_t codepoint;  // Unicode code point
+	uint8_t width;       // Glyph pixel width
+	uint8_t height;      // Glyph pixel height
+	uint8_t stride;      // Bytes per row (ceil(width/8))
+	const uint8_t* bitmap;  // Pointer to row-major bitmap data (2D array flattened)
+} m5_morsematrix_glyph_t;
+
+typedef struct {
+	const char* name;           // Font name (e.g., "normal_8x8")
+	uint8_t default_width;      // Default glyph width
+	uint8_t default_height;     // Default glyph height
+	uint8_t default_stride;     // Default stride
+	const m5_morsematrix_glyph_t* glyphs;
+	size_t glyph_count;
+} m5_morsematrix_font_t;
+#endif
+
+extern const m5_morsematrix_glyph_t g_m5_morsematrix_font_ascii_5x8_glyphs[];
+extern const size_t g_m5_morsematrix_font_ascii_5x8_count;
+extern const m5_morsematrix_font_t g_m5_morsematrix_font_ascii_5x8;

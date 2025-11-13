@@ -1,48 +1,22 @@
-# Product Name
+# MorseMatrix-UserDemo
 
 ## Overview
 
-### SKU:xxx
+### SKU:C150
 
-Description of the product
+MorseMatrix is an 8x8 matrix LED screen equipped with buttons and infrared capabilities. This UserDemo can implement standby animations, waiting input animations, Morse code input indicators, character animations, infrared data reception, and serial port data reception.
 
 ## Related Link
 
 - [Document & Datasheet](https://docs.m5stack.com/en/unit/product_Link)
+- [Function Guide (CN)](./M5MorseMatrix_Function_Guide_CN.md)
+- [Function Guide (EN)](./M5MorseMatrix_Function_Guide_EN.md)
 
-## Required Libraries:
+## Tool Chains
 
-- [Adafruit_BMP280_Library](https://github.com/adafruit/Required_Libraries_Link)
-
-## License
-
-- [Product Name- MIT](LICENSE)
-
-## Remaining steps(Editorial Staff Look,After following the steps, remember to delete all the content below)
-
-1. Change [clang format check path](./.github/workflows/clang-format-check.yml#L42-L47).
-2. Add License content to [LICENSE](/LICENSE).
-3. Change link on line 78 of [bug-report.yml](./.github/ISSUE_TEMPLATE/bug-report.yml#L79).
-
-```cpp
-Example
-# M5Unit-ENV
-
-## Overview
-
-### SKU:U001 & U001-B & U001-C
-
-Contains M5Stack-**UNIT ENV** series related case programs.ENV is an environmental sensor with integrated SHT30 and QMP6988 internally to detect temperature, humidity, and atmospheric pressure data.
-
-## Related Link
-
-- [Document & Datasheet](https://docs.m5stack.com/en/unit/envIII)
-
-## Required Libraries:
-
-- [Adafruit_BMP280_Library](https://github.com/adafruit/Adafruit_BMP280_Library)
+[ESP-IDF v5.5.1]([https://docs.espressif.com/projects/esp-idf/en/v5.4.2/esp32s3/index.html](https://docs.espressif.com/projects/esp-idf/en/release-v5.5/esp32c3/index.html))
 
 ## License
 
-- [M5Unit-ENV - MIT](LICENSE)
-```
+- [MorseMatrix - MIT](LICENSE)
+
